@@ -2,14 +2,16 @@
   "name": "node-apps",
   "version": "1.0.0",
   "description": "",
-  "main": "promises.test.js",
+  "main": "server/server.js",
   "directories": {
     "doc": "docs"
   },
   "dependencies": {
+    "faker": "^4.1.0",
     "fs": "0.0.1-security",
     "jest": "^24.8.0",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {},
   "scripts": {
