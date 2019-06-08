@@ -11,3 +11,18 @@ const socket = socketIOClient.connect(constants.SERVER_URL);
 socket.on(events.RECEIVED_EVENT, payload => {
   console.log(payload);
 });
+
+socket.on('test', () => {
+  console.log('This is a test from the logger.');
+});
+
+socket.on('success', () => {
+  console.log('logger heard success');
+});
+//Becky - payload can be anything
+socket.on('failure', (jjjj) => {
+  console.log('Was not able to modify file', jjjj);
+});
+
+
+
